@@ -1,0 +1,170 @@
+body{
+    background: url("../picture/D2XD5WK2Igs-photoaidcom-darken.jpg") no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+
+    -moz-background-size: cover;
+
+    -o-background-size: cover;
+
+    background-size: cover;
+}
+*{
+    color:white;
+}
+.cream{
+    color:wheat;
+}
+.logo{
+    width: 5%;
+    height: 5%;
+    background: white;
+    border-radius: 50%;
+}
+.navbar{
+    margin-left: 25%;
+    list-style-type:  none;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: wheat;
+    text-decoration: none;
+}
+.favicon{
+    margin-left: 50%;
+}
+.text{
+    margin-top: 10%;
+    margin-left: 50%;
+}
+.text h1{
+    font-family: Czizh Body;
+    font-size: 100px;
+    font-weight: 700;
+    color: #a96f12;
+}
+.text h2{
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 10%;
+    color: wheat;
+}
+.text p {
+    color: darkgrey;
+    font-size: 18px;
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Czizh Body';
+    src: url("../fonts/ofont.ru_Czizh.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.social{
+    margin-left: 50%;
+}
+a svg path{
+    fill: white;
+}
+a svg path:hover{
+    fill: wheat;
+}
+.social a:not(.btn){
+    border: #a96f12 solid 2px;
+    border-radius: 50%;
+}
+.social .btn{
+    background-color: #a96f12;
+    font-size: 22px;
+    width: 300px;
+    height: 60px;
+}
+.social .btn:hover{
+    background-color: rgba(169, 111, 18, 0.8);
+}
+.about img:not(.full-photo){
+    width: 65%;
+    border-radius: 10%;
+}
+.row .col-lg-4 .card{
+    background: none;
+    border: none;
+    color: wheat;
+}
+.full-photo{
+    width: 100%;
+    border-radius: 10%;
+}
+.promotion .row .col-lg-5 img{
+    border-radius: 10% ;
+}
+.row .col-lg-5 .card{
+    background: none;
+    border: none;
+    color: wheat;
+}
+ul li{
+    list-style-image: url("../picture/free-icon-coffee-beans-3219300.png");
+}
+.col-lg-5 .btn{
+    background-color: #a96f12;
+    font-size: 22px;
+    width: 300px;
+    height: 60px;
+}
+.col-lg-5 .btn:hover{
+    background-color: rgba(169, 111, 18, 0.8);
+}
+.container hr{
+    color: #a96f12;
+    border-width: 5px;
+}
+.container h1{
+    font-family: Czizh Body;
+    font-size: 70px;
+    font-weight: 600;
+    color: #a96f12;
+}
+.review h2{
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 10%;
+    color: wheat;
+}
+.review .row .col-lg-4 .card{
+    background-color: rgba(169, 169, 169, 0.2);
+    color: white;
+    padding: 5%;
+}
+.carousel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.form-floating label{
+    color: black;
+}
+.avatar-1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.avatar-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.avatar-3{
+    height: 80%;
+}
