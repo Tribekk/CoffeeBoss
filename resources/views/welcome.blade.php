@@ -90,7 +90,7 @@
                 </svg>
             </a>
             <div>
-                <a class="btn ms-5" href="https://t.me/uv_delivery_bot"><p class="mt-1">Заказать доставку</p></a>
+                <a class="btn ms-5" href="{{route('products')}}"><p class="mt-1">Заказать доставку</p></a>
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@
                 <li class="m-3">Мы понимаем, что редко удаётся праздновать день рождения день в день.</li>
             </ul>
             <div>
-                <a class="btn ms-5 mt-5" href="https://t.me/uv_delivery_bot"><p class="mt-1">Как нас найти</p></a>
+                <a class="btn ms-5 mt-5" href="{{route('contacts')}}"><p class="mt-1">Как нас найти</p></a>
             </div>
         </div>
     </div>

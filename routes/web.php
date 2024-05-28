@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\GalleryPhotoController;
 use App\Http\Controllers\NewsBlogController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReviewsController;
 use App\Http\Controllers\UserController;
 use App\Models\Review;
@@ -72,3 +74,22 @@ Route::get('/news', [NewsBlogController::class, 'index'])->name('news');
 Route::get('/contacts', function (){
    return view('contacts');
 })->name('contacts');
+Route::middleware('auth')->group(function (){
+    Route::controller(ProductController::class)->group(function (){
+        Route::get('/products', 'show')->name('products');
+        Route::get('/add/order/list/{id}', 'add')->name('add.order.list');
+        Route::get('/cart', 'show')->name('cart');
+        Route::get('/cart/plus/{id}', 'plus')->name('plus.id');
+        Route::get('/cart/minus/{id}', 'minus')->name('minus.id');
+        Route::get('/cart/delete/{id}', 'delete')->name('cart.delete');
+        Route::post('/cart', 'create');
+    });
+
+    Route::controller(CartController::class)->group(function (){
+        Route::get('/cart', 'index')->name('cart');
+        Route::post('/cart/remove', 'remove')->name('cart.remove');
+        Route::get('/orders', 'status')->name('orders');
+        Route::get('/check/{id}', 'check')->name('check');
+        Route::get('/download/{id}', 'download')->name('download');
+    });
+});

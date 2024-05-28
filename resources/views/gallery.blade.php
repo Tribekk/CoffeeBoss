@@ -5,7 +5,7 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
                 @foreach($galleryPhoto as $photo)
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$photo->id-2}}"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$photo->id}}"></button>
                 @endforeach
             </div>
 

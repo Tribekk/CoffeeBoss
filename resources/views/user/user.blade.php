@@ -9,13 +9,16 @@
             </div>
         </div>
         <div class="row m-5">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
+                <a href="{{route('orders')}}" type="button" class="btn btn-info"><h2 class="p-4">Мои заказы</h2></a>
+            </div>
+            <div class="col-lg-3">
                 <a href="{{route('user.update.avatar')}}" type="button" class="btn btn-success"><h2 class="p-1">Изменить аватар</h2></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <a href="{{route('user.update.password')}}" type="button" class="btn btn-warning"><h2 class="p-1">Изменить пароль</h2></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <a href="{{route('user.delete')}}" type="button" class="btn btn-danger"><h2 class="p-1">Удалить аккаунт</h2></a>
             </div>
         </div>
